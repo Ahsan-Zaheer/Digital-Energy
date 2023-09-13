@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #121212;
+}
+
+.panel {
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(170deg, #9c27b0, #2196f3);
+    position: relative;
+    overflow: hidden;
+}
+
+@keyframes waveAnimation {
+    0%, 100% {
+        transform: scale(0.9);
+        opacity: 0.5;
+    }
+    50% {
+        transform: scale(1);
+        opacity: 0.75;
+    }
+}
+
+.panel::before, .panel::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 150%;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.795), transparent);
+    animation: waveAnimation 3s infinite;
+}
+
+.panel::after {
+    animation-delay: 1.5s;
+}
+
+/* Replace the placeholder colors with the desired vibrant purple and blue colors. */
+vibrantpurple {
+    color: #9c27b0; /* Placeholder for vibrant purple color */
+}
+
+vibrantblue {
+    color: #2196f3; /* Placeholder for vibrant blue color */
+}
+</style>
+<body>
+    <div class="panel"></div>
+</body>
+</html>
