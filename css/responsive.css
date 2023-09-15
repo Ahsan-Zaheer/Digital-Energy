@@ -1,0 +1,124 @@
+/* Responsive Styles for Smaller Screens (Mobile) */
+@media screen and (max-width: 600px) {
+
+  .sec-1-title{
+    font-size: 28px;
+  }
+  .sec-1-info{
+    font-size: 18px;
+  }
+
+  .btn-sec-1{
+    width: 100px;
+    font-size: 13px;
+  }
+  .btn2-sec-1{
+    width: 100px;
+    font-size: 13px;
+  }
+
+  .sec-2-title span{
+    font-size: 30px;
+  }
+
+
+  .abt-sec{
+    padding: 20px;
+  }
+  .abt-heading{
+    font-size: 40px;
+  }
+  .abt-title{
+    font-size: 22px;
+  }
+  .abt-info{
+    font-size: 18px;
+  }
+
+  .sec-4-title{
+    font-size: 35px;
+  }
+  .sec-4-info{
+    font-size: 25px;
+  }
+  
+}
+
+
+
+
+
+@media screen and (max-width: 767px) {
+  .body{
+    padding-left: 20px;
+    padding-right: 20px;
+  }  
+  
+  .sec-1{
+      width: 100%;
+      margin: 0;
+    }
+    .inner-sec-6{
+      flex-direction: column;
+    }
+    .sec-2{
+      padding: 100px 20px;
+    }
+    .abt-sec{
+      padding-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .abt-title, .abt-info{
+      text-align: center;
+    }
+
+    .sec-5-heading{
+      font-size: 35px;
+    }
+
+    .back{
+      display: none;
+    }
+
+    .sec-5-card{
+      margin: 20px 10px;
+    }
+
+    .sec-6-title{
+      font-size: 35px;
+    }
+
+    .box{
+      width: 90%;
+    }
+
+  }
+  
+  /* Responsive Styles for Medium Screens (Tablets) */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .sec-1-title{
+      font-size: 35px;
+    }
+    .sec-1-info{
+      font-size: 20px;
+    }
+    .btn-sec-1{
+      width: 120px;
+      font-size: 15px;
+    }
+    .btn2-sec-1{
+      width: 100px;
+      font-size: 15px;
+    }
+    .inner-sec-6{
+      flex-direction: column;
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1300px) {
+   .v-1200{
+    display: none;
+   }
+  }
+  
